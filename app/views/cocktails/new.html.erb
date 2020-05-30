@@ -1,4 +1,5 @@
-<%= form_for @cocktail do |f| %>
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.input :photo, as: :file %>
   <%= f.text_field :name %>
   <%= f.submit %>
 <% end %>
